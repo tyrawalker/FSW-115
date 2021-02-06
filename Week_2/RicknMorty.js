@@ -623,4 +623,10 @@ let characters = {
     ]
 }
 
-console.log (characters);
+var ricksCrew = document.getElementById("characterSet")
+
+for (var i = 0; i < characters.results.length; i++) {
+    var newName = document.createElement("li")
+    newName.textContent = characters.results.name[i]
+    ricksCrew.append(newName)
+}
