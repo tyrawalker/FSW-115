@@ -1,2 +1,121 @@
-"//my favorite resturant"
+{
+    "Menu":{
+        "appetizers":{
+            "antipasta":{
+                "ingredients":[
+                    "noodles", 
+                    "olives", 
+                    "tomatoes"
+                ], 
+                "description":"cold pasta with italian spices, meats and veggies"
+            }, 
+            "bruschetta":{
+                "ingredients":[
+                    "italian bread", 
+                    "tomatoes", 
+                    "lemon",
+                    "herbs"
+                ], 
+                "description": "crisp italian bread with lemon zest, tomatoes and rich flavors"
+            }, 
+            "calamari":{
+                "ingredients":[
+                    "squid", 
+                    "breading"
+                ], 
+                "description":"fresh squid, lightly battered and fried, served with lemon and marina sauce."
+            }
+        }, 
+        "coldSanwhiches":{
+            "turkeyClub":{
+                "ingredients":[
+                    "turkey", 
+                    "italian bread", 
+                    "lettuce",
+                    "tomato", 
+                    "bacon", 
+                    "ham"
+                ], 
+                "description":"lots of turkey layered with ham and bacon on toasted italian bread"
+            },
+            "hamAndCheese":{
+                "ingredients":[
+                    "italian bread", 
+                    "ham", 
+                    "swiss"
+                ], 
+                "description":"as simple as it sounds, classic ham and cheese sandwhich"
+            }, 
+            "italian":{
+                "ingredients":[
+                    "salami", 
+                    "pepperoni", 
+                    "swiss", 
+                    "italian sweet peppers"
+                
+                ], 
+                "description":" classis italian grinder with homemade sweet peppers, like grandma used to make"
+            }
+        }, 
+        "hotSanwhiches":{
+            "meatball":{
+                "ingredients":[
+                    "marinara", 
+                    "provalone", 
+                    "italian bread", 
+                    "meatballs"
+                ], 
+                "description":"classuc meatball sub with the option to add hot relish or sweet peppers."
+            }, 
+            "phillyCheesesteak":{
+                "ingredients":[
+                    "brazen steak", 
+                    "cheese whiz", 
+                    "italian bread"
+                ], 
+                "description":"real cheesesteaks are made with fake cheese"
+            },
+            "chickenParm":{
+                "ingredients":[
+                    "chicken breast", 
+                    "marinara sauce", 
+                    "italian bread"
+                ], 
+                "description": "chicken parm isnt a real italian dish, but everyone still thinks so"
+            }
+        }, 
+        "desserts":{
+            "canoli":{
+                "ingredients":[
+                    "racotta cheese", 
+                    "chocolate chips", 
+                    "pie crust"
+                ],
+                "description": "always judge a place on their cannolis"
+            }, 
+            "lemoncello":{
+                "ingredients":[
+                    "lemoncello", 
+                    "vanilla cake", 
+                    "sweet cream frosting"
+                ], 
+                "description": "soaked in lemoncello liquor, this vanilla cake and cream cheese frosting is an after dinner must"
+            }, 
+            "cremeBrulee":{
+                "ingredients":[
+                    "whipped eggs", 
+                    "carmilized sugar", 
+                    "creme"
+                ], 
+                "description":" baked fresh and carmelized at the table, to create that candied top"
+            }
+        }, 
+        "drinks":[
+            "coke", 
+            "tea", 
+            "coffee"
+
+        ]
+    }
+}
 
