@@ -1,4 +1,5 @@
-let characters = {
+let characters = 
+{
     "info": {
         "count": 671,
         "pages": 34,
@@ -622,11 +623,13 @@ let characters = {
         }
     ]
 }
+ const data = JSON.parse(characters)
 
 var ricksCrew = document.getElementById("characterSet")
 
-for (var i = 0; i < characters.results.length; i++) {
+for (var i = 0; i <data.length; i++) {
     var newName = document.createElement("li")
-    newName.textContent = characters.results.name[i]
+    newName.textContent = data.results.name[i]
+    newName.style.textAlign = "left"
     ricksCrew.append(newName)
 }
