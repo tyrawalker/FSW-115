@@ -623,6 +623,4 @@ let characters = {
     ]
 }
 
-var list = document.createElement ("div")
-document.body.append (list)
-list.textContent= characters; 
+console.log (characters);
