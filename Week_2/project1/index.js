@@ -1,4 +1,7 @@
-let characters = {
+
+               
+
+const ricksCrew = JSON.parse(`[{
     "info": {
         "count": 671,
         "pages": 34,
@@ -621,8 +624,11 @@ let characters = {
             "created": "2017-11-04T22:34:53.659Z"
         }
     ]
-}
+}]`)
 
-var list = document.createElement ("div")
+let data = ricksCrew[0].results
+var list = document.createElement("div")
 document.body.append (list)
-list.textContent= characters; 
+list.innerHTML = '<ul>' + data.map((value) => `<li> Name: ${value.name} Gender: ${value.gender}<li>`) + '<ul>'
+//console.log(ricksCrew[0].results[0].name)
+
