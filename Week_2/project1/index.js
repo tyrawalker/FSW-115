@@ -630,5 +630,10 @@ let data = ricksCrew[0].results
 var list = document.createElement("div")
 document.body.append (list)
 list.innerHTML = '<ul>' + data.map((value) => `<li> Name: ${value.name} Gender: ${value.gender}<li>`) + '<ul>'
+list.style.textAlign= "left"
+list.style.fontStyle= "bolder"
+list.style.fontStyle= "italic"
+list.style.textDecorationLine= "underline"
+list.style.textDecorationColor= "blue"
 //console.log(ricksCrew[0].results[0].name)
 
