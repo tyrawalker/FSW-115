@@ -1,20 +1,23 @@
 <!DOCTYPE html>
 <html>
     <head> 
-        <link rel= stylesheet href="./index.css">
+        <link rel= stylesheet href="./project.css">
     </head>
     <body> 
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
-        <script src="./index.js"></script>
 
-        <div id= "characters">
+
+        <div id = "box">
             <h1>Click to display Rick and Morty Characters</h1>
-            <button id= char>Click Me!</button>
+            <ul id= "characters"></ul>
+            <button id= "char">Click Me!</button>
         </div>
 
-        <div id="episodes">
+        <div id="box">
             <h1>Click below to go to Rick and Morty Episodes</h1>
+            <ul id= "episodes"></ul>
             <button id= "epi"><a href= "./episodes.html">Click Me!</button>
         </div>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+        <script src="./characters.js"></script>
     </body>
 </html>

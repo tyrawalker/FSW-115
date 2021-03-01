@@ -1,13 +1,11 @@
-#characters{
+#box{
+    position: relative;
+    left:0%;
     display:flex; 
     max-width: 60%;
     border:5px solid black; 
-    text-align: center;
+    text-align: left;
 }
 
-#episodes{
-    display:flex; 
-    max-width: 60%;
-    border:5px solid black; 
-    text-align: center;
-}
+
+
