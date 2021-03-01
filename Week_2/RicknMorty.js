@@ -623,13 +623,13 @@ let characters =
         }
     ]
 }
- const data = JSON.parse(characters)
+ const data = characters.results
 
 var ricksCrew = document.getElementById("characterSet")
 
 for (var i = 0; i <data.length; i++) {
     var newName = document.createElement("li")
-    newName.textContent = data.results.name[i]
+    newName.textContent = data[i].name
     newName.style.textAlign = "left"
     ricksCrew.append(newName)
 }
