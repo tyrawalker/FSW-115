@@ -1,8 +1,36 @@
 <!DOCTYPE html>
 <html>
-    <title>Week 4 todo 1</title>
+    <title>Week 5 todo</title>
+
+    <head>
+        <link rel ="stylesheet" href= "./index.css">
+    </head>
+
     <body>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js"></script>
-        <script>src= "./index.js"</script>
+        <form id = "todoForm">
+            <h1>Add Todos</h1>
+            <label>Title</label>
+            <input type="text" id= "todoTitle"/>
+            <label>Description</label>
+            <input type="text" id= "todoDescription"/>
+            <label>Price</label>
+            <input type="number" id= "todoPrice"/>
+            <label>Image Url</label>
+            <input type="url" id = "todoImage"/>
+            <label>Completed</label>
+            <input type="checkbox" id= "todoCompleted"/>
+            <button type="submit">Submit</button>
+        </form>
+
+        <div>
+        <h1>Todo List</h1>
+        <div id= "flex-box"></div>
+        </div>
+
+
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.21.1/axios.min.js" integrity="sha512-bZS47S7sPOxkjU/4Bt0zrhEtWx0y0CRkhEp8IckzK+ltifIIE9EMIMTuT/mEzoIMewUINruDBIR/jJnbguonqQ==" crossorigin="anonymous"></script>
+        <script src= "./index.js"></script>
+
     </body>
+
 </html>

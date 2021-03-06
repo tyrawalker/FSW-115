@@ -1,0 +1,32 @@
+html{
+    background-color: plum;
+    margin: 20px; 
+}
+
+#flex-box{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap:5px; 
+}
+
+.todo-box{
+    border: 5px solid black;
+    border-radius: 10%;
+    justify-content: center;
+    background-color: white;
+    
+}
+
+h1{
+    text-align: center;
+}
+
+#todoInputs{
+    position: relative;
+    left: 20%;
+    background-color: white;
+    border: 5px solid black;
+    border-radius: 5%;
+    max-width: 60%;
+}
+
