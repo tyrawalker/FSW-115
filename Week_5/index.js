@@ -1,55 +1,55 @@
-//get request and initial build out
-axios.get ("https://api.vschool.io/twalker/todo")
-.then (response => {
+// //get request and initial build out
+// axios.get ("https://api.vschool.io/twalker/todo")
+// .then (response => {
     
-    for (let i=0; i< response.data.length; i++){
+//     for (let i=0; i< response.data.length; i++){
 
-        const div = document.createElement("div")
-        document.getElementById('flex-box').appendChild(div)
+//         const div = document.createElement("div")
+//         document.getElementById('flex-box').appendChild(div)
 
-        //title
-        let title = document.createElement('h1')
-        title.textContent= response.data[i].title
-        div.appendChild(title)
+//         //title
+//         let title = document.createElement('h1')
+//         title.textContent= response.data[i].title
+//         div.appendChild(title)
 
-        //description
-        let description = document.createElement('h3')
-        description.textContent= `Description:${response.data[i].description}`
-        div.appendChild(description)
+//         //description
+//         let description = document.createElement('h3')
+//         description.textContent= `Description:${response.data[i].description}`
+//         div.appendChild(description)
 
-        //price
-        let price = document.createElement('h3')
-        price.textContent= `Price:${response.data[i].price}`
-        div.appendChild(price)
+//         //price
+//         let price = document.createElement('h3')
+//         price.textContent= `Price:${response.data[i].price}`
+//         div.appendChild(price)
 
-        //image
-        let image= document.createElement("img")
-        image.alt= "image"
-        image.src= response.data[i].imgUrl
-        image.style.maxWidth= "200px"
-        div.appendChild(image)
+//         //image
+//         let image= document.createElement("img")
+//         image.alt= "image"
+//         image.src= response.data[i].imgUrl
+//         image.style.maxWidth= "200px"
+//         div.appendChild(image)
 
-        //id
-        let todoId = document.createElement("h3")
-        todoId.textContent= response.data[i]._id
+//         //id
+//         let todoId = document.createElement("h3")
+//         todoId.textContent= response.data[i]._id
         
 
-        //line break
-        let br= document.createElement("br")
-        div.appendChild(br)
+//         //line break
+//         let br= document.createElement("br")
+//         div.appendChild(br)
 
 
-        //delete button
-        let deleteButton = document.createElement('button')
-        deleteButton.addEventListener('click', deleteTodo)
-        deleteButton.id= todoId.textContent
-        deleteButton.textContent= "Delete"
-        div.appendChild(deleteButton)
+//         //delete button
+//         let deleteButton = document.createElement('button')
+//         deleteButton.addEventListener('click', deleteTodo)
+//         deleteButton.id= todoId.textContent
+//         deleteButton.textContent= "Delete"
+//         div.appendChild(deleteButton)
         
-        //completed button
-        let completeButton = document.createElement('button')
-        completeButton.addEventListener('click', updateTodo)
-        completeButton.id= todoId.textContent
+//         //completed button
+//         let completeButton = document.createElement('button')
+//         completeButton.addEventListener('click', updateTodo)
+//         completeButton.id= todoId.textContent
                
         let checkComplete = ""
         response.data[i].completed === true ? checkComplete = "Mark Incomplete": checkComplete = "Mark Complete"
@@ -62,35 +62,35 @@ axios.get ("https://api.vschool.io/twalker/todo")
         
     }
 })
-.catch (error => console.log (error))
+//.catch (error => console.log (error))
 
 
-//post request
-let form = document.getElementById('todoForm')
+// //post request
+// let form = document.getElementById('todoForm')
 
 
- const postTodo = (e) =>{
-    e.preventDefault()
-    let todoTitle = document.getElementById('todoTitle').value
-    let todoDescription = document.getElementById('todoDescription').value
-    let todoPrice = document.getElementById('todoPrice').value
-    let todoImage = document.getElementById('todoImage').value
-    let todoCompleted = document.getElementById('todoCompleted').checked
+//  const postTodo = (e) =>{
+//     e.preventDefault()
+//     let todoTitle = document.getElementById('todoTitle').value
+//     let todoDescription = document.getElementById('todoDescription').value
+//     let todoPrice = document.getElementById('todoPrice').value
+//     let todoImage = document.getElementById('todoImage').value
+//     let todoCompleted = document.getElementById('todoCompleted').checked
  
- let newTodo= {
-    title: todoTitle,
-    description:todoDescription,
-    price:todoPrice,
-    image:todoImage,
-    completed:todoCompleted
- } 
+//  let newTodo= {
+//     title: todoTitle,
+//     description:todoDescription,
+//     price:todoPrice,
+//     image:todoImage,
+//     completed:todoCompleted
+//  } 
 
 
- axios.post("https://api.vschool.io/twalker/todo", newTodo)
- .then (response => {
-     location.reload()
- })
-.catch (error => console.log (error))}
+//  axios.post("https://api.vschool.io/twalker/todo", newTodo)
+//  .then (response => {
+//      location.reload()
+//  })
+// .catch (error => console.log (error))}
 
 //event listeners
 form.addEventListener('submit', postTodo)
