@@ -64,14 +64,14 @@ const todosDisplay =(todos)=>{
         //delete button
         let deleteButton = document.createElement('button')
          deleteButton.addEventListener('click', deleteTodo)
-         deleteButton.id= Id.textContent
+         deleteButton.id= todo._id
          deleteButton.textContent= "Delete"
          task.appendChild(deleteButton)
         
         //completed button
         let completeButton = document.createElement('button')
         completeButton.addEventListener('click', updateTodo)
-        completeButton.id= Id.textContent
+        completeButton.id= todo._id
 
         let checkComplete = ""
         todo.completed === true ? checkComplete = "Mark Incomplete": checkComplete = "Mark Complete"
